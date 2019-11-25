@@ -54,7 +54,9 @@ for dict_word in dictionary:
     words.append(dict_word)
 
 # print usable words to console
-for word in words:
-  print(word)
+for length in range(3,7):
+  for word in words:
+    if len(word) == length:
+      print(word)
 
 
